@@ -8,6 +8,12 @@ from scapy.all import *
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+output_directory = 'Output'
+
+# Create the output directory if it does not exist
+if not os.path.exists(output_directory):
+    os.makedirs(output_directory)
+
 def decode_utf16le(data):
     """Decode a byte string from UTF-16-LE, or return its hex representation on failure."""
     try:
@@ -89,6 +95,7 @@ def extract_smb2_details(packet, extracted_files_names, extracted_files_sizes):
                 "FileName": extracted_files_names,
                 "FileSize": filesize
             }
+            
             file_path = f'Output/Read_Response_{packet.time}.txt'
 
             with open(file_path, 'w') as file:
