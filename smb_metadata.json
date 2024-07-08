@@ -1,0 +1,22 @@
+[
+    {
+        "Command": 8,
+        "SourceIP": "192.168.1.78",
+        "SourcePort": 55770,
+        "DestIP": "192.168.1.53",
+        "DestPort": 445,
+        "Timestamp": 1403194574.23248,
+        "FileName": "%5cTest%5c2009-12 Payroll.xlsx",
+        "FileSize": 25940
+    },
+    {
+        "Command": 8,
+        "SourceIP": "192.168.1.53",
+        "SourcePort": 445,
+        "DestIP": "192.168.1.78",
+        "DestPort": 55770,
+        "Timestamp": 1403194574.23275,
+        "FileName": "%5cTest%5c2009-12 Payroll.xlsx",
+        "FileSize": 25940
+    }
+]
