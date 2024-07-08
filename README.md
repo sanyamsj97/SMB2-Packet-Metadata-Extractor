@@ -34,7 +34,7 @@ python smb2_packet_extractor.py path/to/your/input-file.pcap
 ### Example
 
 ```bash
-python smb2_packet_extractor.py sample.pcap
+python extract_smb.py smb.pcap
 ```
 
 ## Output
